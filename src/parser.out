@@ -1,0 +1,258 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> statement
+Rule 1     statement -> create_Client
+Rule 2     statement -> create_Server
+Rule 3     statement -> connect
+Rule 4     statement -> receive
+Rule 5     statement -> send
+Rule 6     statement -> close_client
+Rule 7     statement -> bind
+Rule 8     statement -> listen
+Rule 9     statement -> accept
+Rule 10    statement -> close_server
+Rule 11    statement -> error
+Rule 12    create_Client -> CREATE_CLIENT
+Rule 13    create_Server -> CREATE_SERVER
+Rule 14    connect -> CONNECT
+Rule 15    receive -> RECEIVE
+Rule 16    send -> SEND
+Rule 17    close_client -> CLIENT_CLOSE
+Rule 18    bind -> BIND
+Rule 19    listen -> LISTEN
+Rule 20    accept -> ACCEPT
+Rule 21    close_server -> SERVER_CLOSE
+
+Terminals, with rules where they appear
+
+ACCEPT               : 20
+BIND                 : 18
+CLIENT_CLOSE         : 17
+CONNECT              : 14
+CREATE_CLIENT        : 12
+CREATE_SERVER        : 13
+LISTEN               : 19
+RECEIVE              : 15
+SEND                 : 16
+SERVER_CLOSE         : 21
+error                : 11
+
+Nonterminals, with rules where they appear
+
+accept               : 9
+bind                 : 7
+close_client         : 6
+close_server         : 10
+connect              : 3
+create_Client        : 1
+create_Server        : 2
+listen               : 8
+receive              : 4
+send                 : 5
+statement            : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . statement
+    (1) statement -> . create_Client
+    (2) statement -> . create_Server
+    (3) statement -> . connect
+    (4) statement -> . receive
+    (5) statement -> . send
+    (6) statement -> . close_client
+    (7) statement -> . bind
+    (8) statement -> . listen
+    (9) statement -> . accept
+    (10) statement -> . close_server
+    (11) statement -> . error
+    (12) create_Client -> . CREATE_CLIENT
+    (13) create_Server -> . CREATE_SERVER
+    (14) connect -> . CONNECT
+    (15) receive -> . RECEIVE
+    (16) send -> . SEND
+    (17) close_client -> . CLIENT_CLOSE
+    (18) bind -> . BIND
+    (19) listen -> . LISTEN
+    (20) accept -> . ACCEPT
+    (21) close_server -> . SERVER_CLOSE
+
+    error           shift and go to state 12
+    CREATE_CLIENT   shift and go to state 13
+    CREATE_SERVER   shift and go to state 14
+    CONNECT         shift and go to state 15
+    RECEIVE         shift and go to state 16
+    SEND            shift and go to state 17
+    CLIENT_CLOSE    shift and go to state 18
+    BIND            shift and go to state 19
+    LISTEN          shift and go to state 20
+    ACCEPT          shift and go to state 21
+    SERVER_CLOSE    shift and go to state 22
+
+    statement                      shift and go to state 1
+    create_Client                  shift and go to state 2
+    create_Server                  shift and go to state 3
+    connect                        shift and go to state 4
+    receive                        shift and go to state 5
+    send                           shift and go to state 6
+    close_client                   shift and go to state 7
+    bind                           shift and go to state 8
+    listen                         shift and go to state 9
+    accept                         shift and go to state 10
+    close_server                   shift and go to state 11
+
+state 1
+
+    (0) S' -> statement .
+
+
+
+state 2
+
+    (1) statement -> create_Client .
+
+    $end            reduce using rule 1 (statement -> create_Client .)
+
+
+state 3
+
+    (2) statement -> create_Server .
+
+    $end            reduce using rule 2 (statement -> create_Server .)
+
+
+state 4
+
+    (3) statement -> connect .
+
+    $end            reduce using rule 3 (statement -> connect .)
+
+
+state 5
+
+    (4) statement -> receive .
+
+    $end            reduce using rule 4 (statement -> receive .)
+
+
+state 6
+
+    (5) statement -> send .
+
+    $end            reduce using rule 5 (statement -> send .)
+
+
+state 7
+
+    (6) statement -> close_client .
+
+    $end            reduce using rule 6 (statement -> close_client .)
+
+
+state 8
+
+    (7) statement -> bind .
+
+    $end            reduce using rule 7 (statement -> bind .)
+
+
+state 9
+
+    (8) statement -> listen .
+
+    $end            reduce using rule 8 (statement -> listen .)
+
+
+state 10
+
+    (9) statement -> accept .
+
+    $end            reduce using rule 9 (statement -> accept .)
+
+
+state 11
+
+    (10) statement -> close_server .
+
+    $end            reduce using rule 10 (statement -> close_server .)
+
+
+state 12
+
+    (11) statement -> error .
+
+    $end            reduce using rule 11 (statement -> error .)
+
+
+state 13
+
+    (12) create_Client -> CREATE_CLIENT .
+
+    $end            reduce using rule 12 (create_Client -> CREATE_CLIENT .)
+
+
+state 14
+
+    (13) create_Server -> CREATE_SERVER .
+
+    $end            reduce using rule 13 (create_Server -> CREATE_SERVER .)
+
+
+state 15
+
+    (14) connect -> CONNECT .
+
+    $end            reduce using rule 14 (connect -> CONNECT .)
+
+
+state 16
+
+    (15) receive -> RECEIVE .
+
+    $end            reduce using rule 15 (receive -> RECEIVE .)
+
+
+state 17
+
+    (16) send -> SEND .
+
+    $end            reduce using rule 16 (send -> SEND .)
+
+
+state 18
+
+    (17) close_client -> CLIENT_CLOSE .
+
+    $end            reduce using rule 17 (close_client -> CLIENT_CLOSE .)
+
+
+state 19
+
+    (18) bind -> BIND .
+
+    $end            reduce using rule 18 (bind -> BIND .)
+
+
+state 20
+
+    (19) listen -> LISTEN .
+
+    $end            reduce using rule 19 (listen -> LISTEN .)
+
+
+state 21
+
+    (20) accept -> ACCEPT .
+
+    $end            reduce using rule 20 (accept -> ACCEPT .)
+
+
+state 22
+
+    (21) close_server -> SERVER_CLOSE .
+
+    $end            reduce using rule 21 (close_server -> SERVER_CLOSE .)
+
