@@ -8,10 +8,14 @@ Usage:
 The commands are:
 -	create_server  Create a server
 -	create_client  Create a client
+-	bind  Creates port, type port address from 1024 forward
+-	listen  Enables connection from clients to servers
 -	connect  Set connection to desired device, device name and parameters needed.
--	send_message  Create and send messages to the other end of the client, string line needed.
--	receive_update  Receive feedback from server.
--	close  Closes the connection with client.
+-	accept  Accepts the connection with client and sever
+-	send  Create and send messages to the other end of the client, string line needed.
+-	receive  Receive feedback from server.
+-	close_client  Closes the connection with client.
+-	close_server  Closes the server
 
 Contributors:
 -	Kenneth W. Cruz-Cruz
@@ -19,3 +23,4 @@ Contributors:
 
 Support:
 -	Python 3.
+
